@@ -1,0 +1,23 @@
+python_module02/
+│
+├── README.md
+│
+├── ex0/
+│   └── ft_first_exception.py
+│
+├── ex1/
+│   └── ft_different_errors.py
+│
+├── ex2/
+│   └── ft_custom_errors.py
+│
+├── ex3/
+│   └── ft_finally_block.py
+│
+├── ex4/
+│   └── ft_raise_errors.py
+│
+├── ex5/
+│   └── ft_garden_management.py
+│
+└── (any additional files, e.g., .gitignore)
