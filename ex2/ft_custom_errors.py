@@ -1,12 +1,15 @@
 class GardenError(Exception):
-	"""Manages garden errors"""
-	pass
+    """Manages garden errors"""
+    pass
+
 
 class PlantError(GardenError):
-	pass
+    pass
+
 
 class WaterError(GardenError):
-	pass
+    pass
+
 
 def ft_checker() -> None:
     print("=== Custom Garden Errors Demo ===\n")

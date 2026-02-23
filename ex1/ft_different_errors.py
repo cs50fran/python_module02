@@ -1,7 +1,7 @@
 def garden_operations():
     print("Testing ValueError...")
     try:
-        temp = int("abc")
+        int("abc")
     except ValueError:
         print("Caught ValueError: invalid literal for int()")
         print()

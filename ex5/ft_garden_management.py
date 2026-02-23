@@ -21,13 +21,17 @@ class Plant:
         if not self.name:
             raise ValueError("Plant name cannot be empty!")
         if self.water_level > 10:
-            raise ValueError(f"Water level {self.water_level} is too high (max 10)")
+            raise ValueError(f"Water level {self.water_level} "
+                             "is too high (max 10)")
         if self.water_level < 1:
-            raise ValueError(f"Water level {self.water_level} is too low (min 1)")
+            raise ValueError(f"Water level {self.water_level} "
+                             "is too low (min 1)")
         if self.sun_hours > 12:
-            raise ValueError(f"Sunlight hours {self.sun_hours} is too high (max 12)")
+            raise ValueError(f"Sunlight hours {self.sun_hours} "
+                             "is too high (max 12)")
         if self.sun_hours < 2:
-            raise ValueError(f"Sunlight hours {self.sun_hours} is too low (min 2)")
+            raise ValueError(f"Sunlight hours {self.sun_hours} "
+                             "is too low (min 2)")
         return (f"{self.name}: healthy"
                 f" (water: {self.water_level}, sun: {self.sun_hours})")
 
