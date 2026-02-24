@@ -12,9 +12,9 @@ class WaterError(GardenError):
 
 class Plant:
     def __init__(self, name: str, water_level: int, sun_hours: int) -> None:
-        self.name = name
-        self.water_level = water_level
-        self.sun_hours = sun_hours
+        self.name: str = name
+        self.water_level: int = water_level
+        self.sun_hours: int = sun_hours
 
     def check_health(self) -> str:
         """Check if plant conditions are valid."""

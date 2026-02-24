@@ -23,8 +23,10 @@ def garden_operations() -> None:
 
     print("Testing KeyError...")
     try:
-        plants = {"rose": "red", "lily": "white", "daisy": "yellow"}
-        cause_error = "missing_plant"
+        plants: dict[str, str] = {"rose": "red",
+                                  "lily": "white",
+                                  "daisy": "yellow"}
+        cause_error: str = "missing_plant"
         plants[cause_error]
     except KeyError:
         print("Caught KeyError: 'missing_plant'")

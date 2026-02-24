@@ -21,26 +21,26 @@ def test_plants_checks() -> None:
     print("=== Garden Plant Health Checker ===\n")
     print("Testing good values...")
     try:
-        result1 = check_plant_health("tomato", 5, 8)
+        result1: str = check_plant_health("tomato", 5, 8)
         print(result1)
     except ValueError as e:
         print(f"Error: {e}")
     print("\nTesting empty plant name...")
     try:
-        result2 = check_plant_health("      ", 10, 8)
+        result2: str = check_plant_health("      ", 10, 8)
         print(result2)
     except ValueError as e:
         print(f"Error: {e}")
     print("\nTesting bad water level values...")
     try:
-        result3 = check_plant_health("tomato", 25, 6)
+        result3: str = check_plant_health("tomato", 25, 6)
         print(result3)
     except ValueError as e:
         print(f"Error: {e}")
     print("\nTesting bad sunlight hours...")
     try:
-        result3 = check_plant_health("tomato", 5, 0)
-        print(result3)
+        result4: str = check_plant_health("tomato", 5, 0)
+        print(result4)
     except ValueError as e:
         print(f"Error: {e}")
     print("\nAll error raising tests completed!")

@@ -21,7 +21,7 @@ def test_temperature_input() -> None:
     """Test temperature validation with various inputs."""
     print("=== Garden Temperature Checker ===")
 
-    test_cases = ["25", "abc", "100", "-50"]
+    test_cases: list[str] = ["25", "abc", "100", "-50"]
 
     for temp in test_cases:
         print(f"\nTesting temperature: {temp}")
