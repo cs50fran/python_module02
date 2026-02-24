@@ -18,7 +18,7 @@ class Plant:
 
     def check_health(self) -> str:
         """Check if plant conditions are valid."""
-        if not self.name:
+        if not self.name or self.name.strip() == "":
             raise ValueError("Plant name cannot be empty!")
         if self.water_level > 10:
             raise ValueError(f"Water level {self.water_level} "

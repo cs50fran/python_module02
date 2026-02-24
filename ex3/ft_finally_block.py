@@ -3,7 +3,7 @@ def water_plants(plant_list: list[str]):
     try:
         for plant in plant_list:
             if plant is None:
-                raise TypeError("Cannot water none - invalid plant!")
+                raise TypeError(f"Cannot water {plant} - invalid plant!")
             print(f"Watering {plant}")
     except TypeError as e:
         print(f"Error: {e}")

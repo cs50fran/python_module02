@@ -4,7 +4,7 @@ def check_plant_health(
     sun_hours: int
 ) -> str:
     """Check if plant conditions are valid."""
-    if not plant_name:
+    if not plant_name or plant_name.strip() == "":
         raise ValueError("Plant name cannot be empty!")
     if water_level > 10:
         raise ValueError(f"Water level {water_level} is too high (max 10)")
@@ -27,7 +27,7 @@ def test_plants_checks():
         print(f"Error: {e}")
     print("\nTesting empty plant name...")
     try:
-        result2 = check_plant_health("", 25, 8)
+        result2 = check_plant_health("      ", 10, 8)
         print(result2)
     except ValueError as e:
         print(f"Error: {e}")
