@@ -17,7 +17,7 @@ def check_plant_health(
     return f"Plant '{plant_name}' is healthy!"
 
 
-def test_plants_checks():
+def test_plants_checks() -> None:
     print("=== Garden Plant Health Checker ===\n")
     print("Testing good values...")
     try:

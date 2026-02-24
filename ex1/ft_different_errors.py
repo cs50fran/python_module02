@@ -1,4 +1,4 @@
-def garden_operations():
+def garden_operations() -> None:
     print("Testing ValueError...")
     try:
         int("abc")
@@ -38,7 +38,7 @@ def garden_operations():
         print()
 
 
-def test_error_types():
+def test_error_types() -> None:
     print("=== Garden Error Types Demo ===\n")
     garden_operations()
     print("All error types tested successfully!")

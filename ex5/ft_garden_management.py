@@ -38,7 +38,7 @@ class Plant:
 
 class GardenManager:
     def __init__(self, name: str) -> None:
-        self.name = name
+        self.name: str = name
         self.plants: list[Plant] = []
 
     def add_plant(self, plant: Plant) -> None:
@@ -80,9 +80,8 @@ class GardenManager:
 
 
 def test_garden_management() -> None:
-    """Demonstrate the full garden management system."""
     print("=== Garden Management System ===\n")
-    manager = GardenManager("My Garden")
+    manager: GardenManager = GardenManager("My Garden")
 
     print("Adding plants to garden...")
     manager.add_plant(Plant("tomato", 5, 8))
@@ -96,7 +95,7 @@ def test_garden_management() -> None:
     manager.check_all_health()
 
     # lettuce with bad water to show error
-    bad_lettuce = Plant("lettuce", 15, 6)
+    bad_lettuce: Plant = Plant("lettuce", 15, 6)
     try:
         print(bad_lettuce.check_health())
     except ValueError as e:
